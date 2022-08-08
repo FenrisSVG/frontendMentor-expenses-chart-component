@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet"> 
+  <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main class="main">
+    <section class="header-section">
+      <div class="header-section__container">
+        <p class="header-section__balance">My balance</p>
+        <p class="header-section__value" id="balance"><span>$921.48</span></p>
+      </div>
+      <div class="header-section__button">
+        <div class="header-section__button-1"></div>
+        <div class="header-section__button-2"></div>
+      </div>
+    </section>
+    <section class="footer-section">
+      <header class="footer-section__header">
+        <h1 class="footer-section__title">Spending - Last 7 days</h1>
+      </header>
+      <div class="footer-section__body">
+          <div class="footer-section__options">
+            <p class="footer-section__amount" id="amount"></p>
+            <div class="footer-section__progress footer-section__progress--mon" 
+            id="percent"></div>
+            <p class="footer-section__day" id="day"></p>
+          </div>   
+          <div class="footer-section__options">
+            <p class="footer-section__amount" id="amount"></p>
+            <div class="footer-section__progress footer-section__progress--tue" 
+            id="percent"></div>
+            <p class="footer-section__day" id="day"></p>
+          </div> 
+          <div class="footer-section__options">
+            <p class="footer-section__amount" id="amount"></p>
+            <div class="footer-section__progress footer-section__progress--wed" 
+            id="percent"></div>
+            <p class="footer-section__day" id="day"></p>
+          </div> 
+          <div class="footer-section__options">
+            <p class="footer-section__amount" id="amount"></p>
+            <div class="footer-section__progress footer-section__progress--thu" 
+            id="percent"></div>
+            <p class="footer-section__day" id="day"></p>
+          </div> 
+          <div class="footer-section__options">
+            <p class="footer-section__amount" id="amount"></p>
+            <div class="footer-section__progress footer-section__progress--fri" 
+            id="percent"></div>
+            <p class="footer-section__day" id="day"></p>
+          </div> 
+          <div class="footer-section__options">
+            <p class="footer-section__amount" id="amount"></p>
+            <div class="footer-section__progress footer-section__progress--sat" 
+            id="percent"></div>
+            <p class="footer-section__day" id="day"></p>
+          </div> 
+          <div class="footer-section__options">
+            <p class="footer-section__amount" id="amount"></p>
+            <div class="footer-section__progress footer-section__progress--sun" 
+            id="percent"></div>
+            <p class="footer-section__day" id="day"></p>
+          </div> 
+      </div>
+      <footer class="footer-section__footer">
+        <div class="footer-section__total">
+          <p class="footer-section__month">Total this month</p>
+          <p id="totalMonth" class="footer-section__value"><span>$478.33</span></p>
+        </div>
+        <div class="footer-section__percent">
+          <p class="footer-section__stock"><strong>+2.4%</strong></p>
+          <p class="footer-section__last">from last month</p>
+        </div>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
